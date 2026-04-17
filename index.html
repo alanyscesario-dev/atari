@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars: Force Maze (Atari Style)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div id="score-box">SCORE: <span id="score">000000</span></div>
+            <div id="lives-box">LIVES: <span id="lives">3</span></div>
+        </div>
+        
+        <div id="canvas-wrapper">
+            <canvas id="gameCanvas" width="560" height="620"></canvas>
+            <div id="overlay" class="hidden">
+                <div id="message-box">
+                    <h1 id="status-text">FORCE MAZE</h1>
+                    <p id="sub-text">PRESS ANY KEY TO START</p>
+                </div>
+            </div>
+            <div id="crt-effect"></div>
+        </div>
+
+        <div id="instructions">
+            ARROW KEYS TO MOVE | SPACE FOR HYPERDRIVE (IF READY)
+        </div>
+    </div>
+
+    <script src="sprites.js"></script>
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
